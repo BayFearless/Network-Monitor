@@ -36,21 +36,6 @@ cd <your-repo>
 pip install -r requirements.txt
 ```
 
-## Usage
-
-Run the script from an **administrator** terminal.
-
-English interface:
-
-```bash
-python eng/network_monitor.py
-```
-
-Turkish interface (Türkçe arayüz):
-
-```bash
-python tr/network_monitor.py
-```
 
 ## Project structure
 
