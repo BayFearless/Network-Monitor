@@ -43,23 +43,23 @@ Run the script from an **administrator** terminal.
 English interface:
 
 ```bash
-python ENG/network_monitor.py
+python ENG/NetworkMonitor-ENG.py
 ```
 
 Turkish interface (Türkçe arayüz):
 
 ```bash
-python TR/network_monitor.py
+python TR/NetworkMonitor-TR.py
 ```
 
 ## Project structure
 
 ```
-.
+Network-Monitor/
 ├── ENG/
-│   └── network_monitor.py   # English version
+│   └── NetworkMonitor-ENG.py   # English version
 ├── TR/
-│   └── network_monitor.py   # Turkish version
+│   └── NetworkMonitor-TR.py    # Turkish version
 ├── requirements.txt
 └── README.md
 ```
@@ -84,4 +84,3 @@ python TR/network_monitor.py
 - Windows only.
 - Very short-lived connections may appear as "Unmatched traffic" because they close before the process list is updated.
 - ICMP (ping) traffic has no port, so Windows cannot tell which process sent it.
-
