@@ -30,27 +30,31 @@ PySide6
 
 ## Installation
 
-```bash
-git clone https://github.com/BayFearless/Network-Monitor.git
-cd Network-Monitor
-pip install -r requirements.txt
+1. Click the green **Code** button at the top of this page and choose **Download ZIP**.
+2. Extract the ZIP file anywhere you like.
+3. Install [Python](https://www.python.org/downloads/) (tick **Add python.exe to PATH** during setup) and [Npcap](https://npcap.com/).
+4. Open a command prompt and install the required packages once:
+
 ```
+pip install psutil scapy PySide6
+```
+
+(Or run `pip install -r requirements.txt` inside the extracted folder.)
 
 ## Usage
 
-Run the script from an **administrator** terminal.
+Pick the language version you want:
 
-English interface:
+- `ENG/NetworkMonitor-ENG.py` - English
+- `TR/NetworkMonitor-TR.py` - Turkish (Türkçe)
 
-```bash
-python ENG/NetworkMonitor-ENG.py
-```
+There are two ways to start it:
 
-Turkish interface (Türkçe arayüz):
+**Option 1 - Double-click.** Double-click the `.py` file. The program opens, but without administrator rights some traffic may be missing. The window title shows **NOT ADMIN** in that case.
 
-```bash
-python TR/NetworkMonitor-TR.py
-```
+**Option 2 - As administrator (recommended).**
+1. Open **Command Prompt** as administrator (search for `cmd`, right-click, **Run as administrator**).
+2. Type `python ` (with a space after it), drag the `.py` file into the window and press **Enter**.
 
 ## Project structure
 
@@ -84,3 +88,7 @@ Network-Monitor/
 - Windows only.
 - Very short-lived connections may appear as "Unmatched traffic" because they close before the process list is updated.
 - ICMP (ping) traffic has no port, so Windows cannot tell which process sent it.
+
+## License
+
+Add a license of your choice (for example MIT) as a `LICENSE` file.
