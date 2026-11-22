@@ -30,8 +30,8 @@ PySide6
 
 ## Installation
 
-1. Click the green **Code** button at the top of this page and choose **Download ZIP**.
-2. Extract the ZIP file anywhere you like.
+1. Click the green **Code** button at the top of this page and choose **Download ZIP**. The file is saved as `Network-Monitor-main.zip`.
+2. Extract the ZIP file anywhere you like. This creates a folder called `Network-Monitor-main`. Open it, then open the `Network Monitor` folder inside; the `ENG` and `TR` folders are there.
 3. Install [Python](https://www.python.org/downloads/) (tick **Add python.exe to PATH** during setup) and [Npcap](https://npcap.com/).
 4. Open a command prompt and install the required packages once:
 
@@ -45,8 +45,8 @@ pip install psutil scapy PySide6
 
 Pick the language version you want:
 
-- `ENG/NetworkMonitor-ENG.py` - English
-- `TR/NetworkMonitor-TR.py` - Turkish (Türkçe)
+- `Network Monitor/ENG/NetworkMonitor-ENG.py` - English
+- `Network Monitor/TR/NetworkMonitor-TR.py` - Turkish (Türkçe)
 
 There are two ways to start it:
 
@@ -59,11 +59,13 @@ There are two ways to start it:
 ## Project structure
 
 ```
-Network-Monitor/
-├── ENG/
-│   └── NetworkMonitor-ENG.py   # English version
-├── TR/
-│   └── NetworkMonitor-TR.py    # Turkish version
+Network-Monitor-main/        (folder name after extracting the ZIP)
+├── Network Monitor/
+│   ├── ENG/
+│   │   └── NetworkMonitor-ENG.py   # English version
+│   └── TR/
+│       └── NetworkMonitor-TR.py    # Turkish version
+├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
