@@ -85,6 +85,3 @@ python TR/network_monitor.py
 - Very short-lived connections may appear as "Unmatched traffic" because they close before the process list is updated.
 - ICMP (ping) traffic has no port, so Windows cannot tell which process sent it.
 
-## License
-
-Add a license of your choice (for example MIT) as a `LICENSE` file.
