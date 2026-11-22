@@ -31,19 +31,34 @@ PySide6
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/BayFearless/Network-Monitor.git
+cd Network-Monitor
 pip install -r requirements.txt
 ```
 
+## Usage
+
+Run the script from an **administrator** terminal.
+
+English interface:
+
+```bash
+python ENG/network_monitor.py
+```
+
+Turkish interface (Türkçe arayüz):
+
+```bash
+python TR/network_monitor.py
+```
 
 ## Project structure
 
 ```
 .
-├── eng/
+├── ENG/
 │   └── network_monitor.py   # English version
-├── tr/
+├── TR/
 │   └── network_monitor.py   # Turkish version
 ├── requirements.txt
 └── README.md
@@ -70,5 +85,6 @@ pip install -r requirements.txt
 - Very short-lived connections may appear as "Unmatched traffic" because they close before the process list is updated.
 - ICMP (ping) traffic has no port, so Windows cannot tell which process sent it.
 
+## License
 
-
+Add a license of your choice (for example MIT) as a `LICENSE` file.
